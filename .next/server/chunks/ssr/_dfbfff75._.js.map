@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 6, "column": 0}, "map": {"version":3,"sources":[],"names":[],"mappings":"","debugId":null}},
+    {"offset": {"line": 24, "column": 0}, "map": {"version":3,"sources":["file:///root/Documents/playground/sopmac_look_me_store/src/app/page.tsx"],"sourcesContent":["export default function Home() {\n\treturn (\n\t\t<main className=\"flex flex-col gap-4\">\n\t\t\t<section className=\"border-4 bg-amber-300 h-screen\">\n\t\t\t\t<p>1</p>\n\t\t\t</section>\n\t\t\t<section className=\"border-4 bg-red-300 h-screen\">\n\t\t\t\t<p>2</p>\n\t\t\t</section>\n\t\t\t<section className=\"border-4 bg-blue-300 h-screen\">\n\t\t\t\t<p>3</p>\n\t\t\t</section>\n\t\t\t<section className=\"border-4 bg-green-300 h-screen\">\n\t\t\t\t<p>4</p>\n\t\t\t</section>\n\t\t</main>\n\t)\n}\n"],"names":[],"mappings":";;;;;AAAe,SAAS;IACvB,qBACC,6WAAC;QAAK,WAAU;;0BACf,6WAAC;gBAAQ,WAAU;0BAClB,cAAA,6WAAC;8BAAE;;;;;;;;;;;0BAEJ,6WAAC;gBAAQ,WAAU;0BAClB,cAAA,6WAAC;8BAAE;;;;;;;;;;;0BAEJ,6WAAC;gBAAQ,WAAU;0BAClB,cAAA,6WAAC;8BAAE;;;;;;;;;;;0BAEJ,6WAAC;gBAAQ,WAAU;0BAClB,cAAA,6WAAC;8BAAE;;;;;;;;;;;;;;;;;AAIP","debugId":null}}]
+}
