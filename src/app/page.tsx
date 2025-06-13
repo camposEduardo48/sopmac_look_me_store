@@ -87,7 +87,7 @@ export default function Home() {
 							lado A
 							<article className="p-10">
 								<p className="text-2xl text-justify">
-									Classifique oque você achou do nosso modelo de layout atual.
+									Classifique oque você achou do modelo de layout atual.
 								</p>
 								<div className="flex items-center justify-center h-auto w-full p-6">
 									<Rating size={30} value={value} onChange={setValue} />
