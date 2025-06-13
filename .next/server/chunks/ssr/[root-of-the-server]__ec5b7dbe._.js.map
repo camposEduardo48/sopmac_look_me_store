@@ -1,6 +1,0 @@
-{
-  "version": 3,
-  "sources": [],
-  "sections": [
-    {"offset": {"line": 15, "column": 0}, "map": {"version":3,"sources":["file:///root/Documents/playground/sopmac_look_me_store/src/_components/Header.tsx"],"sourcesContent":["\"use client\"\n\nimport { IconBusinessplan, IconUserCircle } from \"@tabler/icons-react\"\n\nconst Header = () => {\n\treturn (\n\t\t<header className=\"flex items-center fixed shadow-xl z-50 top-0 p-4 bg-white justify-between h-auto w-full\">\n\t\t\t<section>\n\t\t\t\t<IconBusinessplan color=\"gray\" size={30} />\n\t\t\t</section>\n\t\t\t<nav>\n\t\t\t\t<IconUserCircle color=\"gray\" size={30} />\n\t\t\t</nav>\n\t\t</header>\n\t)\n}\n\nexport default Header\n"],"names":[],"mappings":";;;;AAEA;AAAA;AAFA;;;AAIA,MAAM,SAAS;IACd,qBACC,6WAAC;QAAO,WAAU;;0BACjB,6WAAC;0BACA,cAAA,6WAAC,oUAAA,CAAA,mBAAgB;oBAAC,OAAM;oBAAO,MAAM;;;;;;;;;;;0BAEtC,6WAAC;0BACA,cAAA,6WAAC,gUAAA,CAAA,iBAAc;oBAAC,OAAM;oBAAO,MAAM;;;;;;;;;;;;;;;;;AAIvC;uCAEe","debugId":null}}]
-}
