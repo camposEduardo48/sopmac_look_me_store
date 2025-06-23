@@ -6,13 +6,37 @@ import Fullpage, {
 	FullpageSection,
 } from "@ap.cx/react-fullpage"
 import Image from "next/image"
-import { Button, Divider } from "@mantine/core"
-import { IconEye, IconSend2 } from "@tabler/icons-react"
+import {
+	Blockquote,
+	Button,
+	Divider,
+	Paper,
+	RingProgress,
+	Table,
+	Text,
+} from "@mantine/core"
+import { IconEye, IconInfoCircle, IconSend2 } from "@tabler/icons-react"
 import { useState } from "react"
 import { Rating } from "@mantine/core"
 
 export default function Home() {
 	const [value, setValue] = useState(0)
+	const icon = <IconInfoCircle />
+	const elements = [
+		{ position: 6, mass: 12.011, symbol: "C", name: "Carbon" },
+		{ position: 7, mass: 14.007, symbol: "N", name: "Nitrogen" },
+		{ position: 39, mass: 88.906, symbol: "Y", name: "Yttrium" },
+		{ position: 56, mass: 137.33, symbol: "Ba", name: "Barium" },
+		{ position: 58, mass: 140.12, symbol: "Ce", name: "Cerium" },
+	]
+	const rows = elements.map((element) => (
+		<Table.Tr key={element.name}>
+			<Table.Td>{element.position}</Table.Td>
+			<Table.Td>{element.name}</Table.Td>
+			<Table.Td>{element.symbol}</Table.Td>
+			<Table.Td>{element.mass}</Table.Td>
+		</Table.Tr>
+	))
 	return (
 		<Fullpage duration={150}>
 			<FullPageSections>
@@ -76,23 +100,65 @@ export default function Home() {
 								alt="free use"
 							/>
 						</section>
-						<section className="flex flex-col items-center bg-gray-100 justify-center h-screen w-full">
+						<section className="flex flex-col items-center bg-gray-100 justify-center h-screen w-full gap-4 p-10">
 							lado B
+							<RingProgress
+								size={250}
+								thickness={22}
+								label={
+									<Text size="xs" ta="center">
+										Application data usage
+									</Text>
+								}
+								sections={[
+									{ value: 40, color: "blue" },
+									{ value: 15, color: "silver" },
+									{ value: 10, color: "red" },
+								]}
+							/>
+							<Table>
+								<Table.Thead>
+									<Table.Tr>
+										<Table.Th>Element position</Table.Th>
+										<Table.Th>Element name</Table.Th>
+										<Table.Th>Symbol</Table.Th>
+										<Table.Th>Atomic mass</Table.Th>
+									</Table.Tr>
+								</Table.Thead>
+								<Table.Tbody>{rows}</Table.Tbody>
+							</Table>
 						</section>
 					</main>
 				</FullpageSection>
 				<FullpageSection className="bg-white h-screen">
 					<main className="flex max-sm:flex-col">
-						<section className="flex flex-col items-center bg-gray-100 justify-center h-screen w-full">
+						<section className="flex flex-col items-center bg-gray-100 justify-center h-screen w-full p-10">
 							lado A
 							<article className="p-10">
 								<p className="text-2xl text-justify">
 									Classifique oque você achou do modelo de layout atual.
 								</p>
+								<Blockquote
+									color="blue"
+									cite="– Forrest Gump"
+									icon={icon}
+									mt="xl"
+								>
+									Life is like an npm install – you never know what you are
+									going to get.
+								</Blockquote>
 								<div className="flex items-center justify-center h-auto w-full p-6">
 									<Rating size={30} value={value} onChange={setValue} />
 								</div>
 							</article>
+							<Paper shadow="xs" p="xl">
+								<Text>
+									Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+									Facere distinctio esse omnis sit voluptatibus nam magni
+									similique earum ab, sint laborum nostrum quo, doloremque modi!
+									Debitis eaque perferendis quaerat ut?
+								</Text>
+							</Paper>
 						</section>
 						<section className="flex flex-col items-center justify-center h-screen w-full">
 							lado B
