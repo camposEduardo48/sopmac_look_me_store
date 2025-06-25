@@ -18,7 +18,6 @@ import {
 import { IconEye, IconInfoCircle, IconSend2 } from "@tabler/icons-react"
 import { useState } from "react"
 import { Rating } from "@mantine/core"
-import Carousel from "@/_components/Carousel"
 
 export default function Home() {
 	const [value, setValue] = useState(0)
@@ -77,16 +76,7 @@ export default function Home() {
 										height: "400px",
 										position: "relative",
 									}}
-								>
-									<Carousel
-										baseWidth={500}
-										autoplay={true}
-										autoplayDelay={3000}
-										pauseOnHover={true}
-										loop={true}
-										round={false}
-									/>
-								</div>
+								/>
 							</article>
 						</section>
 						<section className="flex flex-col items-center justify-center h-screen w-full">
