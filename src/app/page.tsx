@@ -8,14 +8,13 @@ import Fullpage, {
 import Image from "next/image"
 import {
 	Blockquote,
-	Button,
 	Divider,
 	Paper,
 	RingProgress,
 	Table,
 	Text,
 } from "@mantine/core"
-import { IconEye, IconInfoCircle, IconSend2 } from "@tabler/icons-react"
+import { IconInfoCircle } from "@tabler/icons-react"
 import { useState } from "react"
 import { Rating } from "@mantine/core"
 
@@ -42,18 +41,7 @@ export default function Home() {
 			<FullPageSections>
 				<FullpageSection className="h-screen bg-white">
 					<main className="flex max-sm:flex-col">
-						<section className="flex flex-col-reverse justify-around h-screen w-2xl p-6">
-							<article className="flex flex-col-reverse">
-								<nav className="flex justify-end gap-4 w-full">
-									<Button variant="outline">
-										Ver mais <IconEye />
-									</Button>
-									<Button variant="filled">
-										Acessar <IconSend2 size={20} />
-									</Button>
-								</nav>
-								<Divider className="my-10" color="#1C7ED6" />
-							</article>
+						<section className="flex flex-col-reverse justify-around h-screen w-3xl p-6">
 							<article className="max-w-2xl pt-20">
 								<p className="text-3xl font-semibold text-[#1C7ED6]">
 									Olá mundo
@@ -68,6 +56,7 @@ export default function Home() {
 									officiis repellat cumque alias. Explicabo dolor minus sit
 									animi. Similique magni aliquid deserunt.
 								</p>
+								<Divider className="my-10" color="#1C7ED6" />
 								<div
 									style={{
 										display: "flex",
@@ -84,7 +73,7 @@ export default function Home() {
 							<Image
 								src="/software-tester-pana.svg"
 								height={500}
-								width={600}
+								width={900}
 								alt="free use"
 							/>
 						</section>
@@ -97,7 +86,7 @@ export default function Home() {
 							<Image
 								src="/softwaretester-rafiki.svg"
 								height={500}
-								width={600}
+								width={800}
 								alt="free use"
 							/>
 						</section>

@@ -38,9 +38,11 @@ export default function RootLayout({
 			<body
 				className={`${geistSans.variable} ${geistMono.variable} relative antialiased h-full w-full box-border m-0 p-0`}
 			>
-				<Header />
-				<MantineProvider defaultColorScheme="light">{children}</MantineProvider>
-				<Footer />
+				<MantineProvider defaultColorScheme="light">
+					<Header />
+					{children}
+					<Footer />
+				</MantineProvider>
 			</body>
 		</html>
 	)

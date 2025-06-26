@@ -611,6 +611,7 @@ class App {
 		const width = height * this.camera.aspect
 		this.viewport = { width, height }
 		if (this.medias) {
+			// biome-ignore lint/complexity/noForEach: <explanation>
 			this.medias.forEach((media) =>
 				media.onResize({ screen: this.screen, viewport: this.viewport }),
 			)
@@ -625,6 +626,7 @@ class App {
 		)
 		const direction = this.scroll.current > this.scroll.last ? "right" : "left"
 		if (this.medias) {
+			// biome-ignore lint/complexity/noForEach: <explanation>
 			this.medias.forEach((media) => media.update(this.scroll, direction))
 		}
 		this.renderer.render({ scene: this.scene, camera: this.camera })
